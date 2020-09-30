@@ -48,6 +48,10 @@ while (t > 0):
     j = int(input())
     S = input()
     T = input()
-    print (edit(S, i-1, T, j-1))
-    print (optimize_edit(S, i, T, j))
+    # p is the function call to function edit
+    p = edit(S, i-1, T, j-1)
+    print(p)
+    # p_dash is the function call to function optimize_edits
+    p_dash = optimize_edit(S, i, T, j)
+    print (p_dash)
     
